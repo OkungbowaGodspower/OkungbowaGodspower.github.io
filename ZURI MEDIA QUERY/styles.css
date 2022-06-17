@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+.text{
+    margin-left: 9%;
+    margin-top: 18%;
+}
+.text h1{
+    color: white;
+    font-size: 47px;
+    line-height: 60px;
+    margin-bottom: 12px;
+}
+.text p{
+    color: white;
+    font-size: 16px;
+    width: 500px;
+    line-height: 25px;
+}
+.get{
+    margin-left: 12%;
+    margin-top: 6%;
+}
+.get button{
+    margin-bottom: 20px;
+    padding: 15px 60px;
+    font-size: 16px;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #e46c70;
+}
+form{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 65vh;
+    box-shadow: 0 6px 0 #e46c70;
+}
+.input-field{
+    width: 100%;
+    padding: 0px;
+}
+.input-field input{
+    width: 90%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline-color: hsl(246, 25%, 77%);
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 1px solid gray;
+}
+.input-field input::before{
+    border: 1px solid gray;
+}
+.input-field input::placeholder{
+    font-size: 16px;
+ }
+ input [type="email"]:invalid{
+    color: hsl(0, 100%, 74%);
+    background-color: aqua;
+ }
+ .submit button{
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 90%;
+    font-size: 16px;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 3px 0 hsl(154, 74%, 58%);
+ }
+ .note p{
+    font-size: 10px;
+    margin-left: 50px;
+    color: gray;
+ }
+ .note span{
+    color: hsl(0, 100%, 74%);
+ }
+
+ @media screen and (max-width: 375px){
+    .container{
+        width: 75%;
+        background-image: url(images/bg-intro-mobile.png);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .text{
+        margin-left: 0%;
+        text-align: center;
+    }
+    .text h1{
+        font-size: x-large;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+    .text p{
+        font-size: 15px;
+        text-align: center;
+        width: 260px;
+    }
+    form{
+        height: 45vh;
+    }
+    .get{
+        margin-left: 4%;
+        text-align: center;
+        width: 240px;
+    }
+    .get button{
+        padding: 15px ;
+        font-size: 12px;
+    }
+    .input-field{
+        width: 100%;
+        padding: 0px;
+    }
+    .input-field input{
+        width: 85%;
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-left: 1%;
+    }
+    
+    .input-field input::placeholder{
+        font-size: 14px;
+     }
+     .submit button{
+        margin-left: 2px;
+        width: 85%;
+        font-size: 15px;
+     }
+     .note p{
+        font-size: 9px;
+        margin-left: 12px;
+        margin-right: 12px;
+        color: gray;
+     }
+     .note span{
+        color: hsl(0, 100%, 74%);
+     }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
